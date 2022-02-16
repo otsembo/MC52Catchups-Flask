@@ -1,3 +1,5 @@
+[![GitHub issues](https://img.shields.io/github/issues/otsembo/MC52Catchups-Flask)](https://github.com/otsembo/MC52Catchups-Flask/issues) [![GitHub forks](https://img.shields.io/github/forks/otsembo/MC52Catchups-Flask)](https://github.com/otsembo/MC52Catchups-Flask/network) [![GitHub stars](https://img.shields.io/github/stars/otsembo/MC52Catchups-Flask)](https://github.com/otsembo/MC52Catchups-Flask/stargazers) [![GitHub license](https://img.shields.io/github/license/otsembo/MC52Catchups-Flask)](https://github.com/otsembo/MC52Catchups-Flask/blob/main/LICENSE) 
+
 # Flask Catchup Sessions
 Python / Flask Recap for Moringa MC52 Hybrid class
 
