@@ -1,3 +1,4 @@
+from genericpath import exists
 import unittest
 from contact import Contact
 
@@ -43,6 +44,17 @@ class TestContact(unittest.TestCase):  # Import testcase module to indicate that
         found_contact = Contact.find_contact_by_number(711223344)
 
         self.assertEqual(found_contact.email, test_contact.email)
+
+    def test_contact_exists(self):
+        self.new_contact.save_contact()
+        test_contact = Contact("Test", "user", 711223344, "test@user.com")  # new contact
+        test_contact.save_contact()
+
+        exists = Contact.contact_exist(test_contact.phone_number)
+        self.assertTrue(exists)
+
+    def test_display_all_contacts(self):
+        self.assertEqual(Contact.display_contacts(), Contact.contact_list)
 
 
 if __name__ == '__main__':
