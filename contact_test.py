@@ -1,6 +1,9 @@
-from genericpath import exists
 import unittest
+import pyperclip
+
+from genericpath import exists
 from contact import Contact
+
 
 
 # import modules
@@ -55,6 +58,14 @@ class TestContact(unittest.TestCase):  # Import testcase module to indicate that
 
     def test_display_all_contacts(self):
         self.assertEqual(Contact.display_contacts(), Contact.contact_list)
+
+    # install pyperclip for next session {python  -m pip install pyperclip}, ensure you have pip installed
+
+    def test_copy_email(self):
+        self.new_contact.save_contact()
+        Contact.copy_email(711223344)
+
+        self.assertEqual(self.new_contact.email, pyperclip.paste())
 
 
 if __name__ == '__main__':
