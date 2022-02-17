@@ -52,3 +52,6 @@ class Contact:
     def copy_email(cls, number):
         contact_found = Contact.find_contact_by_number(number)
         pyperclip.copy(contact_found.email)
+
+    #  shebang file creation
+    #  Create file {touch run.py}
